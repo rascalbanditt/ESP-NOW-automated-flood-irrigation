@@ -102,11 +102,11 @@ void onSent(const uint8_t *mac_addr, esp_now_send_status_t status)
 
   if (status == ESP_NOW_SEND_SUCCESS)
   {
-    SerialMon.printf("✅ [%lu ms] Sent to %s successfully\n", now, macStr);
+    SerialMon.printf("[%lu ms] Sent to %s successfully\n", now, macStr);
   }
   else
   {
-    SerialMon.printf("❌ [%lu ms] Failed to send to %s\n", now, macStr);
+    SerialMon.printf(" [%lu ms] Failed to send to %s\n", now, macStr);
   }
 }
 
